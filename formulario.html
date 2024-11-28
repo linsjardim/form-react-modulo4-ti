@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href= "./formulario.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.html" method="post"> 
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="estado-civil">Estado Civil:</label>
+            <select id="estado-civil" name="estado-civil" required>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="viuvo">Viúvo</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Contato</legend>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf" required>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Cadastro</legend>
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Deseja receber informações sobre:</legend>
+
+            <label for="musica">Música</label>
+            <input type="checkbox" id="musica" name="informacoes[]" value="musica">
+
+            <label for="filmes">Filmes</label>
+            <input type="checkbox" id="filmes" name="informacoes[]" value="filmes">
+
+            <label for="esportes">Esportes</label>
+            <input type="checkbox" id="esportes" name="informacoes[]" value="esportes">
+
+            <label for="noticias">Notícias</label>
+            <input type="checkbox" id="noticias" name="informacoes[]" value="noticias">
+
+            <label for="viagem">Viagem</label>
+            <input type="checkbox" id="viagem" name="informacoes[]" value="viagem">
+
+            <label for="tecnologia">Tecnologia</label>
+            <input type="checkbox" id="tecnologia" name="informacoes[]" value="tecnologia">
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
