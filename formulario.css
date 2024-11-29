@@ -1,4 +1,3 @@
-/* Estilo geral da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +5,6 @@ body {
     padding: 20px;
 }
 
-/* Título do formulário */
 h1 {
     text-align: center;
     color: #333;
@@ -14,7 +12,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo do formulário */
 form {
     background-color: #fff;
     border-radius: 8px;
@@ -23,7 +20,6 @@ form {
     margin: 0 auto;
 }
 
-/* Estilo dos fieldsets */
 fieldset {
     border: 2px solid #ccc;
     padding: 15px;
@@ -37,43 +33,37 @@ legend {
     color: #333;
 }
 
-/* Estilo dos rótulos e inputs */
 label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
 }
 
-/* Configuração para os inputs e selects */
 input, select {
-    width: 100%;  /* Os campos agora ocupam 100% da largura disponível */
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;  /* Fonte ajustada para legibilidade */
+    font-size: 1em;
     transition: all 0.3s ease-in-out;
 }
 
-/* Efeito para campos em foco (preenchendo o campo) */
 input:focus, select:focus {
     border-color: #4CAF50;
     background-color: #e8f5e9;
 }
 
-/* Efeito para campos obrigatórios com dados ausentes */
 input:required:invalid, select:required:invalid {
     border-color: #ff3333;
     background-color: #ffebee;
 }
 
-/* Efeito quando o campo é válido (não vazio) */
 input:required:valid, select:required:valid {
     border-color: #4CAF50;
     background-color: #e8f5e9;
 }
 
-/* Estilo do botão */
 button {
     background-color: #4CAF50;
     color: white;
@@ -91,7 +81,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Estilo dos campos obrigatórios */
 input[required], select[required] {
     border-color: #ff3333;
 }
@@ -100,42 +89,33 @@ input[required]:focus, select[required]:focus {
     border-color: #ff0000;
 }
 
-/* Estilos para dispositivos móveis - Ajustes de layout */
 @media (max-width: 768px) {
-    /* Tamanho do título para telas menores */
     h1 {
         font-size: 1.5em;
     }
 
-    /* Ajuste do tamanho da fonte dos inputs */
     input, select {
         font-size: 1em;
     }
 
-    /* Adiciona um pouco mais de espaçamento entre os campos */
     label, input, select, button {
         margin-bottom: 15px;
     }
 
-    /* Ajuste no padding dos campos de input e select */
     input, select {
         padding: 12px;
     }
 
-    /* Configuração para o botão de submit */
     button {
         font-size: 1.2em;
     }
 }
 
-/* Estilos para telas grandes (acima de 768px) */
 @media (min-width: 769px) {
-    /* Tamanho do título para telas maiores */
     h1 {
         font-size: 2em;
     }
 
-    /* Organiza os campos em 2 colunas em telas grandes */
     fieldset {
         display: flex;
         flex-wrap: wrap;
@@ -147,10 +127,9 @@ input[required]:focus, select[required]:focus {
     }
 
     input, select {
-        width: calc(50% - 10px); /* Campos com 50% de largura, mas com um pequeno espaço */
+        width: calc(50% - 10px);
     }
 
-    /* O botão se ajusta ao tamanho da tela */
     button {
         width: auto;
     }
@@ -166,11 +145,9 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-/* Ajustes para responsividade */
 @media (max-width: 768px) {
-    /* Ajuste do tamanho dos checkboxes e do espaçamento */
     input[type="checkbox"] {
-        width: 20px;  /* Reduz o tamanho dos checkboxes */
+        width: 20px;
     }
 
     fieldset {
